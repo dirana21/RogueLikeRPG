@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ecba2a7-4027-47bc-a032-525b987657d4" name="Changes" comment="" />
+    <list default="true" id="9ecba2a7-4027-47bc-a032-525b987657d4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RogueLikeRPG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RogueLikeRPG/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Enemies/enemy_swordsman.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Enemies/enemy_swordsman.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0001.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0001.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0002.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0002.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0003.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0003.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0004.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0004.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0005.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0005.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0006.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0006.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0007.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0007.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0008.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0008.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0009.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0009.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,34 +26,43 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "dirana21"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;dirana21&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/dirana21/RogueLikeRPG.git",
-    "accountId": "9d8fae08-883c-4842-ba37-9e0dafc1c03e"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/dirana21/RogueLikeRPG.git&quot;,
+    &quot;accountId&quot;: &quot;9d8fae08-883c-4842-ba37-9e0dafc1c03e&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Abstractions/IFacing.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Abstractions/IMover.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Visuals/AnimationDriver.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="34F6bqWq8P5nOGbpPXvhwBbQYVD" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feture/player",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feture/player&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="D:\UnityHub\2022.3.62f2\Editor\Unity.exe" />
@@ -85,6 +110,9 @@
       <option name="presentableId" value="Default" />
       <updated>1760797047532</updated>
       <workItem from="1760797049155" duration="21000" />
+      <workItem from="1760806924841" duration="1805000" />
+      <workItem from="1760809301433" duration="157000" />
+      <workItem from="1760809506199" duration="557000" />
     </task>
     <servers />
   </component>
