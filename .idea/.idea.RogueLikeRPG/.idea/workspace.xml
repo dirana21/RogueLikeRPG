@@ -5,18 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ecba2a7-4027-47bc-a032-525b987657d4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Shared/Stats/IStatsProvider.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Shared/Stats/IStatsProvider.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RogueLikeRPG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RogueLikeRPG/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Enemies/enemy_swordsman.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Enemies/enemy_swordsman.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0001.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0001.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0002.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0002.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0003.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0003.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0004.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0004.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0005.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0005.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0006.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0006.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0007.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0007.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0008.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0008.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0009.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0009.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/FX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/FX.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Tiles/Decore/Mushrooms/Mushrooms_Palette.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Tiles/Decore/Mushrooms/Mushrooms_Palette.prefab.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +35,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Abstractions/IFacing.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Abstractions/IMover.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Visuals/AnimationDriver.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StatsDebugUI.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -51,18 +45,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feture/player&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "feature/player/anim",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="D:\UnityHub\2022.3.62f2\Editor\Unity.exe" />
@@ -113,6 +107,7 @@
       <workItem from="1760806924841" duration="1805000" />
       <workItem from="1760809301433" duration="157000" />
       <workItem from="1760809506199" duration="557000" />
+      <workItem from="1761140862078" duration="3504000" />
     </task>
     <servers />
   </component>
