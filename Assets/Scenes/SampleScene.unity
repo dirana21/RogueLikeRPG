@@ -138,6 +138,9 @@ GameObject:
   - component: {fileID: 207596134}
   - component: {fileID: 207596133}
   - component: {fileID: 207596132}
+  - component: {fileID: 207596137}
+  - component: {fileID: 207596138}
+  - component: {fileID: 207596139}
   m_Layer: 0
   m_Name: Idle-0001
   m_TagString: Untagged
@@ -299,6 +302,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   topDown: 1
+--- !u!114 &207596137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207596126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e85afa324f45104e905c6e7bed01c73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseConfig: {fileID: 11400000, guid: ec0d267509612f94f862336fab99de95, type: 2}
+--- !u!114 &207596138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207596126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae90585551fac2f4caaf821be4acd727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 207596139}
+  node: {fileID: 11400000, guid: f779836085152d4438a22d0a8950bd9a, type: 2}
+  stats: {fileID: 207596137}
+--- !u!114 &207596139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207596126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42c506284dc957f4e90bdf4a291b9c72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tree: {fileID: 11400000, guid: 582fe4bc978dcd049be321fd9a219c8c, type: 2}
+  statsMono: {fileID: 207596137}
 --- !u!1001 &357927111
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -386,6 +431,10 @@ PrefabInstance:
     - target: {fileID: 3824288553370712476, guid: 742210d474774084bbc9458e8b6eccdd, type: 3}
       propertyPath: m_Name
       value: Enemy_Swordsman
+      objectReference: {fileID: 0}
+    - target: {fileID: 3824288553370712476, guid: 742210d474774084bbc9458e8b6eccdd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
