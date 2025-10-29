@@ -24,6 +24,7 @@ MonoBehaviour:
   evasion: 0.049999997
   maxHealth: 100
   maxStamina: 100
+  damageTakenMultiplier: 1
   resFire: 0
   resCold: 0
   resDark: 0

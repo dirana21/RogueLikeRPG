@@ -13,7 +13,8 @@ public sealed class CharacterStats : IStatsProvider, IResistanceProvider
     public const string CritDamage = "crit_damage";     
     public const string StaminaDamage = "stamina_damage";
     public const string AttackSpeed = "attack_speed";   
-    public const string Evasion = "evasion";            
+    public const string Evasion = "evasion"; 
+    public const string DamageTakenMult = "damage_taken_mult";
     
     public Vital Health { get; }
     public Vital Stamina { get; }
@@ -41,6 +42,7 @@ public sealed class CharacterStats : IStatsProvider, IResistanceProvider
         AddStat(StaminaDamage,  cfg.staminaDamage);
         AddStat(AttackSpeed,    cfg.attackSpeed);
         AddStat(Evasion,        cfg.evasion);
+        AddStat(DamageTakenMult, cfg.damageTakenMultiplier);
 
         
         Health  = new Vital("health",  cfg.maxHealth);
@@ -68,7 +70,11 @@ public sealed class CharacterStats : IStatsProvider, IResistanceProvider
     }
 
     public void AddModifier(IStatModifier mod) { _mods.Add(mod); Recompute(); }
-    public void RemoveModifier(IStatModifier mod) { _mods.Remove(mod); Recompute(); }
+    public void RemoveModifier(IStatModifier mod)
+    {
+        if (_mods.Remove(mod))
+            Recompute();
+    }
 
     public float Get(string id) => _stats.TryGetValue(id, out var s) ? s.Value : 0f;
 
@@ -82,5 +88,23 @@ public sealed class CharacterStats : IStatsProvider, IResistanceProvider
     {
         _calc.RecomputeAll(_stats, _mods);
         _calc.RecomputeAll(_resists, _mods);
+    }
+    
+    // Удалить один модификатор и пересчитать
+    public bool TryRemoveModifier(IStatModifier mod)
+    {
+        bool removed = _mods.Remove(mod);
+        if (removed) Recompute();
+        return removed;
+    }
+
+    // Удалить пачку модификаторов (удобно для талантов) и пересчитать один раз
+    public int RemoveModifiers(IEnumerable<IStatModifier> mods)
+    {
+        int removed = 0;
+        foreach (var m in mods)
+            if (_mods.Remove(m)) removed++;
+        if (removed > 0) Recompute();
+        return removed;
     }
 }

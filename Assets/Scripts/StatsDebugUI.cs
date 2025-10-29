@@ -1,28 +1,29 @@
 using UnityEngine;
-using Game.Shared.Stats; // если у тебя неймспейсы
 
 public class StatsDebugUI : MonoBehaviour
 {
-    [SerializeField] private CharacterStatsMono statsMono;
-    [SerializeField] private Animator anim; // твой Animator игрока
+    public TalentController controller;
+    public TalentNodeSO node;             // перетащи сюда твой Damage Reduction +5%
+    public CharacterStatsMono stats;
 
-    void Awake()
+    void Start()
     {
-        if (!statsMono) statsMono = GetComponent<CharacterStatsMono>();
-
-        statsMono.Model.Health.OnChanged  += OnHpChanged;
-        statsMono.Model.Health.OnDepleted += OnDeath;
+        if (!stats) stats = controller.GetComponent<CharacterStatsMono>();
+        Debug.Log($"damageTakenMult BEFORE: {stats.Model.Get(CharacterStats.DamageTakenMult)}");
     }
 
-    private void OnHpChanged(IVital hp)
+    void Update()
     {
-        Debug.Log($"HP: {hp.Current}/{hp.Max}");
-    }
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            bool ok = controller.Unlock(node);
+            Debug.Log($"Unlock pressed: {ok}");
+            Debug.Log($"damageTakenMult AFTER: {stats.Model.Get(CharacterStats.DamageTakenMult)}");
 
-    private void OnDeath()
-    {
-        Debug.Log("DEAD");
-        if (anim) anim.SetBool("IsDead", true);
-        // тут можно отключить управление/движение
+            // мини-проверка урона
+            float hit = 100f;
+            float final = hit * stats.Model.Get(CharacterStats.DamageTakenMult);
+            Debug.Log($"Hit {hit} → final with DR: {final}");
+        }
     }
 }

@@ -21,6 +21,8 @@ public static class DamageCalculator
 
         // Влияние силы/интеллекта — по вашей формуле (пример)
         damage += attacker.Get(CharacterStats.Strength) * 0.5f;
+        
+        damage *= target.Get(CharacterStats.DamageTakenMult);
 
         return Mathf.Max(0f, damage);
     }
