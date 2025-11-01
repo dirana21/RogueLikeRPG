@@ -44,6 +44,9 @@ TagManager:
   - name: Ground
     uniqueID: 661715143
     locked: 0
+  - name: Decor
+    uniqueID: 684104949
+    locked: 0
   - name: Characters
     uniqueID: 1883397977
     locked: 0
