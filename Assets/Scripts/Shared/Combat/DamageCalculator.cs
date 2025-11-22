@@ -4,25 +4,32 @@ public static class DamageCalculator
 {
     private static readonly System.Random _rng = new();
 
-    public static float ComputeHit(CharacterStats target, CharacterStats attacker, float baseDamage, DamageType type)
+    public static float ComputeHit(
+        IStatsProvider attacker,
+        IStatsProvider targetStats,
+        IResistanceProvider targetResists,
+        float baseDamage,
+        DamageType type)
     {
         // Уклонение цели
-        if (_rng.NextDouble() < target.Get(CharacterStats.Evasion))
+        if (_rng.NextDouble() < targetStats.Get(CharacterStats.Evasion))
             return 0f;
 
-        // Крит атакера
         float damage = baseDamage;
+
+        // Крит атакера
         if (_rng.NextDouble() < attacker.Get(CharacterStats.CritChance))
             damage *= attacker.Get(CharacterStats.CritDamage);
 
         // Резист цели
-        float resist = target.GetResistance(type); // 0..1
+        float resist = targetResists.GetResistance(type); // 0..1
         damage *= (1f - resist);
 
-        // Влияние силы/интеллекта — по вашей формуле (пример)
+        // Сила/интеллект атакующего
         damage += attacker.Get(CharacterStats.Strength) * 0.5f;
-        
-        damage *= target.Get(CharacterStats.DamageTakenMult);
+
+        // Модификатор получаемого урона цели
+        damage *= targetStats.Get(CharacterStats.DamageTakenMult);
 
         return Mathf.Max(0f, damage);
     }
