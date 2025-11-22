@@ -6,10 +6,46 @@
   <component name="ChangeListManager">
     <list default="true" id="9ecba2a7-4027-47bc-a032-525b987657d4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RogueLikeRPG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RogueLikeRPG/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shared/Combat/DamageCalculator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shared/Combat/DamageCalculator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shared/Stats/BaseStatsConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shared/Stats/BaseStatsConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Stats/PlayerBaseStats.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Stats/PlayerBaseStats.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Talents/BasePlayerTalents.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Talents/BasePlayerTalents.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Neon Vitality/Damage Reduction +5%.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Neon Vitality/Damage Reduction +5%.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Neon Vitality/Health Regen +1%sec.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Neon Vitality/Health Regen +1%sec.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Neon Vitality/Health+10.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Neon Vitality/Health+10.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Neon Vitality/Health+15.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Neon Vitality/Health+15.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Neon Vitality/Stamina Efficiancy +10%.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Neon Vitality/Stamina Efficiancy +10%.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Neon Vitality/Stamina Recovery after Dash +20%.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Neon Vitality/Stamina Recovery after Dash +20%.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Neon Vitality/Stamina Regen +5%.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Neon Vitality/Stamina Regen +5%.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Neon Vitality/Stamina+10.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Neon Vitality/Stamina+10.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Impact/Attack Speed+5%.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Impact/Attack Speed+5%.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Impact/Basic Attack Damage +5%.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Impact/Basic Attack Damage +5%.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Impact/Critical Chance+3%.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Impact/Critical Chance+3%.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Impact/Critical Damage+10%.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Impact/Critical Damage+10%.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Impact/Heavy Slash Damage+10%.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Impact/Heavy Slash Damage+10%.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Impact/KnockBack Power+1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Impact/KnockBack Power+1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Impact/Strength+5.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Impact/Strength+5.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Impact/Sword Range+1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Impact/Sword Range+1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Inlelligence/Critical Chance+3%.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Inlelligence/Critical Chance+3%.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Inlelligence/Critical Damage+10%.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Inlelligence/Critical Damage+10%.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Inlelligence/Intelligence+5.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Inlelligence/Intelligence+5.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Reflex/Agility+5.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Reflex/Agility+5.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Reflex/Attack Speed+5%.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Reflex/Attack Speed+5%.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Reflex/Critical Chance+2.5%.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Reflex/Critical Chance+2.5%.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Reflex/Dash Distance+1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Reflex/Dash Distance+1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Reflex/Dodge+1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Reflex/Dodge+1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Reflex/Evasion+2.5%.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Reflex/Evasion+2.5%.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Reflex/Movement Speed +5%.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Reflex/Movement Speed +5%.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Vital Core/Defends+10%.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Vital Core/Defends+10%.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Vital Core/Health Regen +1%sec.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Vital Core/Health Regen +1%sec.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Vital Core/Health Regen+2%Sec if health lesser than 50%hp.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Vital Core/Health Regen+2%Sec if health lesser than 50%hp.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Vital Core/Max Health+10%.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Vital Core/Max Health+10%.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Vital Core/Vitality+5.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Talents/Nodes/Path of Vital Core/Vitality+5.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shared/Stats/CharacterStats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shared/Stats/CharacterStats.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StatsDebugUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StatsDebugUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Talents/TalentNodeView.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Talents/TalentNodeView.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TilePalletes/MainPalette.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TilePalletes/MainPalette.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +72,10 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Abstractions/IMover.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Visuals/AnimationDriver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StatsDebugUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TalentDebugAllStats.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Talents/UI/TalentPanelBinder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Talents/UI/TalentTooltipTrigger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Talents/UI/TalentTooltipUI.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -51,7 +91,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/player/anim&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;players/talents&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -112,6 +152,12 @@
       <workItem from="1760809506199" duration="557000" />
       <workItem from="1761140862078" duration="3504000" />
       <workItem from="1761728905601" duration="4610000" />
+      <workItem from="1761771987529" duration="519000" />
+      <workItem from="1763372808741" duration="1265000" />
+      <workItem from="1763374175462" duration="51000" />
+      <workItem from="1763801803960" duration="1000" />
+      <workItem from="1763801815605" duration="3440000" />
+      <workItem from="1763818650045" duration="4470000" />
     </task>
     <servers />
   </component>

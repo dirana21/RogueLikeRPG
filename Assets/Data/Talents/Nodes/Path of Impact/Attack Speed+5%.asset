@@ -12,12 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dc13f503c655748a1366e889e3b411, type: 3}
   m_Name: Attack Speed+5%
   m_EditorClassIdentifier: 
-  id: 
-  title: 
-  description: 
+  id: impact_attack_speed_5
+  title: Attack Speed +5%
+  description: "\u0410\u0442\u0430\u043A\u0438 \u0432\u044B\u043F\u043E\u043B\u043D\u044F\u044E\u0442\u0441\u044F
+    \u043D\u0430 5% \u0431\u044B\u0441\u0442\u0440\u0435\u0435."
   icon: {fileID: 0}
   branch: 2
   requirements: []
   comingSoon: 0
-  pointCost: 1
-  effects: []
+  pointCost: 0
+  effects:
+  - statId: attack_speed
+    op: 1
+    amount: 1.05
+    order: 100
+    duration: 0

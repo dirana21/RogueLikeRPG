@@ -12,12 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dc13f503c655748a1366e889e3b411, type: 3}
   m_Name: Sword Range+1
   m_EditorClassIdentifier: 
-  id: 
-  title: 
-  description: 
+  id: impact_sword_range_01
+  title: Sword Range +0.1
+  description: "\u0423\u0432\u0435\u043B\u0438\u0447\u0438\u0432\u0430\u0435\u0442
+    \u0434\u0430\u043B\u044C\u043D\u043E\u0441\u0442\u044C \u0443\u0434\u0430\u0440\u0430
+    \u043C\u0435\u0447\u043E\u043C \u043D\u0430 0.1."
   icon: {fileID: 0}
   branch: 2
   requirements: []
   comingSoon: 0
-  pointCost: 1
-  effects: []
+  pointCost: 0
+  effects:
+  - statId: sword_radius
+    op: 0
+    amount: 0.1
+    order: 10
+    duration: 0
