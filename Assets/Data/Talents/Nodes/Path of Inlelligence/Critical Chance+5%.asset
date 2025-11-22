@@ -10,14 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 76dc13f503c655748a1366e889e3b411, type: 3}
-  m_Name: Critical Chance+3%
+  m_Name: Critical Chance+5%
   m_EditorClassIdentifier: 
-  id: 
-  title: 
-  description: 
+  id: neural_crit_chance_5
+  title: Crit Chance +5%
+  description: "\u0428\u0430\u043D\u0441 \u043A\u0440\u0438\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0433\u043E
+    \u0443\u0434\u0430\u0440\u0430 +5%."
   icon: {fileID: 0}
   branch: 3
   requirements: []
   comingSoon: 0
-  pointCost: 1
-  effects: []
+  pointCost: 0
+  effects:
+  - statId: crit_chance
+    op: 0
+    amount: 0.05
+    order: 10
+    duration: 0

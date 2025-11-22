@@ -15,6 +15,7 @@ public sealed class CharacterStats : IStatsProvider, IResistanceProvider
     public const string AttackSpeed = "attack_speed";   
     public const string Evasion = "evasion"; 
     public const string DamageTakenMult = "damage_taken_mult";
+    public const string HealthMax = "health_max";
     
     public Vital Health { get; }
     public Vital Stamina { get; }
@@ -22,8 +23,11 @@ public sealed class CharacterStats : IStatsProvider, IResistanceProvider
     private readonly Dictionary<string, Stat> _stats = new();
     private readonly List<IStatModifier> _mods = new();
     private readonly IStatCalculator _calc;
-    
     private readonly Dictionary<DamageType, Stat> _resists = new();
+    private float _lastHpMax = -1f;
+    public bool keepHpRatioOnMaxChange = true;
+    
+    
 
     private float _time;
 
@@ -43,6 +47,7 @@ public sealed class CharacterStats : IStatsProvider, IResistanceProvider
         AddStat(AttackSpeed,    cfg.attackSpeed);
         AddStat(Evasion,        cfg.evasion);
         AddStat(DamageTakenMult, cfg.damageTakenMultiplier);
+        AddStat(HealthMax, cfg.maxHealth);
 
         
         Health  = new Vital("health",  cfg.maxHealth);
@@ -88,13 +93,37 @@ public sealed class CharacterStats : IStatsProvider, IResistanceProvider
     {
         _calc.RecomputeAll(_stats, _mods);
         _calc.RecomputeAll(_resists, _mods);
+
+        if (_stats.TryGetValue(HealthMax, out var hpMaxStat))
+        {
+            float oldMax = (_lastHpMax < 0f) ? Health.Max : _lastHpMax;
+            float newMax = hpMaxStat.Value;
+
+            if (keepHpRatioOnMaxChange && oldMax > 0f)
+            {
+                float ratio = Health.Current / oldMax;
+                Health.SetMax(newMax);
+                Health.SetCurrent(Mathf.Clamp01(ratio) * newMax);
+            }
+            else
+            {
+                // по умолчанию просто обновим Max, Current само "подрежется" если выше Max
+                Health.SetMax(newMax);
+                Health.SetCurrent(Mathf.Min(Health.Current, newMax));
+            }
+
+            _lastHpMax = newMax;
+        }
     }
+    public IReadOnlyDictionary<string, Stat> Stats => _stats;
+    public IReadOnlyDictionary<DamageType, Stat> Resists => _resists;
     
     // Удалить один модификатор и пересчитать
     public bool TryRemoveModifier(IStatModifier mod)
     {
         bool removed = _mods.Remove(mod);
         if (removed) Recompute();
+        
         return removed;
     }
 
