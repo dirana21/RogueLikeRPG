@@ -13,5 +13,35 @@ MonoBehaviour:
   m_Name: BasePlayerTalents
   m_EditorClassIdentifier: 
   nodes:
+  - {fileID: 11400000, guid: b943e88ef63c7c74f83e109c25abf75c, type: 2}
+  - {fileID: 11400000, guid: 6a38cb791d85b7841ac3f70ef6d8326a, type: 2}
+  - {fileID: 11400000, guid: 486fe538c44e90147933ee40805c2bc5, type: 2}
+  - {fileID: 11400000, guid: d826af51ec1a0154f9c96d3b1c7c27b1, type: 2}
+  - {fileID: 11400000, guid: c6d0fbb75bf5ef14a9d46138d3470eb3, type: 2}
+  - {fileID: 11400000, guid: b1ea57c17cf196644a10db19ef614ed7, type: 2}
+  - {fileID: 11400000, guid: 31aa83de67119034495682d8e6fb9f06, type: 2}
+  - {fileID: 11400000, guid: 53b603fc54079b246961304578141602, type: 2}
+  - {fileID: 11400000, guid: 651621639748b6e4696def2ef77b65ef, type: 2}
   - {fileID: 11400000, guid: f779836085152d4438a22d0a8950bd9a, type: 2}
+  - {fileID: 11400000, guid: 04dc4404ca149cb4eafe8d755ef4ced1, type: 2}
+  - {fileID: 11400000, guid: 9597ebd34bfe1de4dac058317584b28a, type: 2}
+  - {fileID: 11400000, guid: b852e440495eac348bb85e9f37b263df, type: 2}
+  - {fileID: 11400000, guid: 4410461619b3fbb498f548a3fae96e32, type: 2}
+  - {fileID: 11400000, guid: 818bc6aeb59c485469c098b11dfa86c5, type: 2}
+  - {fileID: 11400000, guid: 6d3a5e7b0f951f94289df9751d7bd23a, type: 2}
+  - {fileID: 11400000, guid: 16107d0fed0badd49aeefde4a1165461, type: 2}
+  - {fileID: 11400000, guid: 4008c43cb632e4b429be3efda874fc69, type: 2}
+  - {fileID: 11400000, guid: bde977fbeee0b22438ac8e57df60f478, type: 2}
+  - {fileID: 11400000, guid: b774931fe228c4945b6a1af48813fec9, type: 2}
+  - {fileID: 11400000, guid: ffc275c0c1bf1ee46a5d9d15bf1e6190, type: 2}
+  - {fileID: 11400000, guid: c2680a42bdb8c67479f515f6d7c0f9fa, type: 2}
+  - {fileID: 11400000, guid: 214cdc548dd80a249b000a399cba2494, type: 2}
+  - {fileID: 11400000, guid: a1cb910cb5c151e4fb5ef7e3aee5c9d6, type: 2}
+  - {fileID: 11400000, guid: 1a925879c84937749a97b942c66a618a, type: 2}
+  - {fileID: 11400000, guid: 9f2e16daf3a1702408ecce1852d98550, type: 2}
+  - {fileID: 11400000, guid: c121b71ba2150c344980262459e5cfe8, type: 2}
+  - {fileID: 11400000, guid: 7bee11ab4740b8d48b99b7844c66eb52, type: 2}
+  - {fileID: 11400000, guid: edaa9449ecc13104183fe7781cadb555, type: 2}
+  - {fileID: 11400000, guid: 8fa24aacb801cef4189921efe2627ca4, type: 2}
+  - {fileID: 11400000, guid: a221631f3a9c40148ae001181f28a4e2, type: 2}
   startPoints: 0

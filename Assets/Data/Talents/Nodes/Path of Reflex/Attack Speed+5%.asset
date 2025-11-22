@@ -18,6 +18,6 @@ MonoBehaviour:
   icon: {fileID: 0}
   branch: 1
   requirements: []
-  comingSoon: 0
+  comingSoon: 1
   pointCost: 1
   effects: []

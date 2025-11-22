@@ -3,7 +3,7 @@ using UnityEngine;
 [DisallowMultipleComponent]
 public class PlayerController : MonoBehaviour
 {
-    [Header("Refs (оставь пустыми — найдем сами)")]
+    [Header("Refs не трогать, оно ищет путь само")]
     [SerializeField] private MonoBehaviour inputProvider;   // IPlayerInput
     [SerializeField] private MonoBehaviour moverProvider;   // IMover
     [SerializeField] private MonoBehaviour facingProvider;  // IFacing
