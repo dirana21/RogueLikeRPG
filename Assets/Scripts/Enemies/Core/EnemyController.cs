@@ -2,17 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyController : MonoBehaviour
+[RequireComponent(typeof(CharacterStatsMono))]
+public sealed class EnemyController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Transform Target { get; private set; }
+    public CharacterStatsMono Stats { get; private set; }
+
+    private void Awake()
     {
-        
+        Stats = GetComponent<CharacterStatsMono>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetTarget(Transform t)
     {
-        
+        Target = t;
     }
 }
