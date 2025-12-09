@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Enemies\\Movement\\EnemyMovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Enemies\\Movement\\EnemyMovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Enemies\\Detection\\EnemyDetection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Enemies\\Detection\\EnemyDetection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Enemies\\Core\\EnemyController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Enemies\\Core\\EnemyController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Enemies\\Enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Enemies\\Enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -19,15 +31,50 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "EnemyMovement.cs",
+              "DocumentMoniker": "C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Enemies\\Movement\\EnemyMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\Movement\\EnemyMovement.cs",
+              "ToolTip": "C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Enemies\\Movement\\EnemyMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemies\\Movement\\EnemyMovement.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAwF0AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T14:20:00.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EnemyDetection.cs",
+              "DocumentMoniker": "C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Enemies\\Detection\\EnemyDetection.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\Detection\\EnemyDetection.cs",
+              "ToolTip": "C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Enemies\\Detection\\EnemyDetection.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemies\\Detection\\EnemyDetection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T14:19:21.513Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EnemyController.cs",
+              "DocumentMoniker": "C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Enemies\\Core\\EnemyController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\Core\\EnemyController.cs",
+              "ToolTip": "C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Enemies\\Core\\EnemyController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemies\\Core\\EnemyController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T14:18:38.502Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Enemy.cs",
               "DocumentMoniker": "C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Enemies\\Enemy.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\Enemy.cs",
               "ToolTip": "C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Enemies\\Enemy.cs",
               "RelativeToolTip": "Assets\\Scripts\\Enemies\\Enemy.cs",
-              "ViewState": "AgIAAHQAAAAAAAAAAAAIwJgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T13:57:13.729Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-12T13:57:13.729Z"
             }
           ]
         }
