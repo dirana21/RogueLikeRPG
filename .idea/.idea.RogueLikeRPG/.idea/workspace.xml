@@ -6,22 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="9ecba2a7-4027-47bc-a032-525b987657d4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RogueLikeRPG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RogueLikeRPG/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0001.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0001.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0002.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0002.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0003.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0003.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0004.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0004.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0005.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0005.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0006.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0006.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0007.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0007.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0008.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0008.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0009.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0009.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Run/Move-0001.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Run/Move-0001.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Run/Move-0002.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Run/Move-0002.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Run/Move-0003.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Run/Move-0003.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Run/Move-0004.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Run/Move-0004.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Run/Move-0005.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Run/Move-0005.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Run/Move-0006.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Run/Move-0006.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shared/Stats/CharacterStats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shared/Stats/CharacterStats.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +32,11 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyDamageReceiver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Abstractions/IFacing.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Abstractions/IMover.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Combat/PlayerMeleeAttack.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/UI/StatsPanelUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Visuals/AnimationDriver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StatsDebugUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TalentDebugAllStats.cs" root0="FORCE_HIGHLIGHTING" />
@@ -67,7 +58,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Player/someUI",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -135,6 +126,8 @@
       <workItem from="1763801815605" duration="3440000" />
       <workItem from="1763818650045" duration="4470000" />
       <workItem from="1763825052056" duration="8000" />
+      <workItem from="1764881250717" duration="214000" />
+      <workItem from="1765307914068" duration="5269000" />
     </task>
     <servers />
   </component>

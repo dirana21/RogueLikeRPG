@@ -20,6 +20,8 @@ public sealed class CharacterStats : IStatsProvider, IResistanceProvider
     public Vital Health { get; }
     public Vital Stamina { get; }
 
+    public event System.Action OnStatsChanged;
+    
     private readonly Dictionary<string, Stat> _stats = new();
     private readonly List<IStatModifier> _mods = new();
     private readonly IStatCalculator _calc;
@@ -107,18 +109,17 @@ public sealed class CharacterStats : IStatsProvider, IResistanceProvider
             }
             else
             {
-                // по умолчанию просто обновим Max, Current само "подрежется" если выше Max
                 Health.SetMax(newMax);
                 Health.SetCurrent(Mathf.Min(Health.Current, newMax));
             }
 
             _lastHpMax = newMax;
         }
+        OnStatsChanged?.Invoke();
     }
     public IReadOnlyDictionary<string, Stat> Stats => _stats;
     public IReadOnlyDictionary<DamageType, Stat> Resists => _resists;
     
-    // Удалить один модификатор и пересчитать
     public bool TryRemoveModifier(IStatModifier mod)
     {
         bool removed = _mods.Remove(mod);
@@ -126,8 +127,7 @@ public sealed class CharacterStats : IStatsProvider, IResistanceProvider
         
         return removed;
     }
-
-    // Удалить пачку модификаторов (удобно для талантов) и пересчитать один раз
+    
     public int RemoveModifiers(IEnumerable<IStatModifier> mods)
     {
         int removed = 0;
