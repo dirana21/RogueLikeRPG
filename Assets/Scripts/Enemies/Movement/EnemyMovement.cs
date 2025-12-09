@@ -11,7 +11,12 @@ public sealed class EnemyMovement : MonoBehaviour
 
     [Header("Attack Settings")]
     [SerializeField] private float attackRange = 1.2f;     
-    [SerializeField] private float stopBuffer = 0.1f;      
+    //[SerializeField] private float stopBuffer = 0.1f;
+
+    [Header("Attack Logic")]
+    [SerializeField] private float attackCooldown = 1.2f; // врем€ между атаками
+    private float attackTimer = 0f;
+    private bool isAttacking = false;
 
     private Rigidbody2D rb;
     private EnemyController enemy;
@@ -48,32 +53,51 @@ public sealed class EnemyMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        attackTimer -= Time.fixedDeltaTime;
+
         if (enemy.Target != null)
         {
             Vector2 toTarget = enemy.Target.position - transform.position;
             float distance = toTarget.magnitude;
 
+            // ≈сли в радиусе атаки Ч атакуем
             if (distance <= attackRange)
             {
-                currentVelocity = Vector2.zero;    // <<< ¬ј∆Ќќ
+                currentVelocity = Vector2.zero;
+
+                if (!isAttacking && attackTimer <= 0f)
+                    StartAttack();
             }
-            else if (distance > attackRange + stopBuffer)
+            else if (!isAttacking)
             {
+                // дальше чем attackRange Ч идЄм к игроку
                 currentVelocity = MoveTowards(enemy.Target.position);
             }
-            else
-            {
-                currentVelocity = Vector2.zero;    // <<< ¬ј∆Ќќ
-            }
         }
-        else
+        else if (!isAttacking)
         {
+            // ÷ели нет Ч гул€ем по рандомным точкам
             currentVelocity = RandomWalk();
         }
 
-        // примен€ем скорость
         rb.velocity = currentVelocity;
     }
+
+    private void StartAttack()
+    {
+        isAttacking = true;
+        attackTimer = attackCooldown;
+
+        animator.SetTrigger("Attack");
+
+        // ¬раг не должен двигатьс€ во врем€ атаки
+        rb.velocity = Vector2.zero;
+    }
+    public void EndAttack()
+    {
+        isAttacking = false;
+    }
+
 
     // ---------------------------------------------------------
     // ------------------- RANDOM WALK LOGIC -------------------
