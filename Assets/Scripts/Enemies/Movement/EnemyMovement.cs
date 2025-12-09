@@ -9,10 +9,15 @@ public sealed class EnemyMovement : MonoBehaviour
     [SerializeField] private float idleTimeMin = 0.5f;
     [SerializeField] private float idleTimeMax = 1.5f;
 
+    [Header("Attack Settings")]
+    [SerializeField] private float attackRange = 1.2f;     
+    [SerializeField] private float stopBuffer = 0.1f;      
+
     private Rigidbody2D rb;
     private EnemyController enemy;
     private Animator animator;
 
+    private Vector2 currentVelocity;
     private Vector2 spawnPosition;
     private Vector2 randomTarget;
     private float idleTimer = 0f;
@@ -30,23 +35,44 @@ public sealed class EnemyMovement : MonoBehaviour
         PickRandomTarget();
         idleTimer = Random.Range(idleTimeMin, idleTimeMax);
     }
+    private void Update()
+    {
+        // 1) Обновляем анимацию ВСЕГДА
+        bool isMoving = rb.velocity.sqrMagnitude > 0.01f;
+        animator.SetBool("isMoving", isMoving);
+
+        // 2) Обновляем поворот ТОЛЬКО когда движение есть
+        if (isMoving)
+            UpdateFacing(rb.velocity);
+    }
 
     private void FixedUpdate()
     {
-        Vector2 velocity;
-
-        // Преследуем игрока
         if (enemy.Target != null)
         {
-            velocity = MoveTowards(enemy.Target.position);
+            Vector2 toTarget = enemy.Target.position - transform.position;
+            float distance = toTarget.magnitude;
+
+            if (distance <= attackRange)
+            {
+                currentVelocity = Vector2.zero;    // <<< ВАЖНО
+            }
+            else if (distance > attackRange + stopBuffer)
+            {
+                currentVelocity = MoveTowards(enemy.Target.position);
+            }
+            else
+            {
+                currentVelocity = Vector2.zero;    // <<< ВАЖНО
+            }
         }
         else
         {
-            velocity = RandomWalk();
+            currentVelocity = RandomWalk();
         }
-        // Передаём анимацию
-        animator.SetBool("isMoving", velocity.sqrMagnitude > 0.01f);
-        UpdateFacing(velocity);
+
+        // применяем скорость
+        rb.velocity = currentVelocity;
     }
 
     // ---------------------------------------------------------
@@ -88,21 +114,20 @@ public sealed class EnemyMovement : MonoBehaviour
     private Vector2 MoveTowards(Vector2 target)
     {
         Vector2 dir = (target - (Vector2)transform.position).normalized;
-        Vector2 velocity = dir * moveSpeed;
-
-        rb.velocity = velocity;
-        return velocity;
+        return dir * moveSpeed; // БЕЗ rb.velocity !!!
     }
     private void UpdateFacing(Vector2 velocity)
     {
-        if (velocity.sqrMagnitude < 0.01f)
-            return;
-
-        float baseX = 1.3f; // или Mathf.Abs(transform.localScale.x);
+        float baseX = 1.3f;
 
         if (velocity.x > 0)
             transform.localScale = new Vector3(baseX, transform.localScale.y, 1);
         else if (velocity.x < 0)
             transform.localScale = new Vector3(-baseX, transform.localScale.y, 1);
+    }
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, attackRange);
     }
 }
