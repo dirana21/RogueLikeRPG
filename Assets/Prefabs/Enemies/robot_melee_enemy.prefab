@@ -106,7 +106,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.8, y: 0.8}
+  m_Size: {x: 1.6, y: 1.6}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -215,6 +215,9 @@ MonoBehaviour:
   walkRadius: 1.5
   idleTimeMin: 0.5
   idleTimeMax: 1.5
+  attackRange: 1.2
+  attackCooldown: 1.2
+  attackOrigin: {fileID: 0}
 --- !u!114 &3386971543683139612
 MonoBehaviour:
   m_ObjectHideFlags: 0
