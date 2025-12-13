@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6db1129d1ba12824fbeb9461a3cd2e33
+guid: e11577cdb75e1d2488838fdb08b0fae4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IDLE1_0
+      name: ATTACK-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -105,20 +105,20 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0319552639cf94e4bb37c02049b4fd09
-      internalID: -877497320
+      spriteID: febde08c012aeae498dd9165fdfb96b1
+      internalID: 2074924121
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IDLE1_1
+      name: ATTACK-Sheet_1
       rect:
         serializedVersion: 2
         x: 128
@@ -126,20 +126,20 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30fae1b5be2c9db498be52e7dafd94b5
-      internalID: -486325380
+      spriteID: 81b5123027f774d4b89e9eec8702fa94
+      internalID: 552700237
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IDLE1_2
+      name: ATTACK-Sheet_2
       rect:
         serializedVersion: 2
         x: 256
@@ -147,20 +147,20 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4873d839a9594b7449f6b18ad8307ad5
-      internalID: 1495490903
+      spriteID: 9c12c4ac3a219614091b05d5234bdcb1
+      internalID: -2068837116
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IDLE1_3
+      name: ATTACK-Sheet_3
       rect:
         serializedVersion: 2
         x: 384
@@ -168,20 +168,20 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 993e8f889ad0d944a867a0d24089ead8
-      internalID: -2028547334
+      spriteID: 47f72a9f76947294c80438af718b82ca
+      internalID: -1757878472
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IDLE1_4
+      name: ATTACK-Sheet_4
       rect:
         serializedVersion: 2
         x: 512
@@ -189,14 +189,98 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e07be854c73cd84786a5f57c82dcb02
-      internalID: -985017925
+      spriteID: 395e7cb9baf6d5341ad8d5b26909df76
+      internalID: -395258689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATTACK-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 936bcd2b17db95543905acd67d9c9cd6
+      internalID: -1371457028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATTACK-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac04a7b9f361a1148a9b15529b47f03d
+      internalID: -337994620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATTACK-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22225bb4dd6e59442baeb265e5a1c973
+      internalID: 328305835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATTACK-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 295fed21b71a02d4c922fcefebd99787
+      internalID: -1423137549
       vertices: []
       indices: 
       edges: []
@@ -212,11 +296,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      IDLE1_0: -877497320
-      IDLE1_1: -486325380
-      IDLE1_2: 1495490903
-      IDLE1_3: -2028547334
-      IDLE1_4: -985017925
+      ATTACK-Sheet_0: 2074924121
+      ATTACK-Sheet_1: 552700237
+      ATTACK-Sheet_2: -2068837116
+      ATTACK-Sheet_3: -1757878472
+      ATTACK-Sheet_4: -395258689
+      ATTACK-Sheet_5: -1371457028
+      ATTACK-Sheet_6: -337994620
+      ATTACK-Sheet_7: 328305835
+      ATTACK-Sheet_8: -1423137549
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
