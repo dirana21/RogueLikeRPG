@@ -31,7 +31,7 @@ AnimationClip:
     - time: 0.06666667
       value: {fileID: -395258689, guid: e11577cdb75e1d2488838fdb08b0fae4, type: 3}
     - time: 0.083333336
-      value: {fileID: -1371457028, guid: e11577cdb75e1d2488838fdb08b0fae4, type: 3}
+      value: {fileID: -2068837116, guid: e11577cdb75e1d2488838fdb08b0fae4, type: 3}
     - time: 0.1
       value: {fileID: -337994620, guid: e11577cdb75e1d2488838fdb08b0fae4, type: 3}
     - time: 0.11666667
@@ -65,7 +65,7 @@ AnimationClip:
     - {fileID: -2068837116, guid: e11577cdb75e1d2488838fdb08b0fae4, type: 3}
     - {fileID: -1757878472, guid: e11577cdb75e1d2488838fdb08b0fae4, type: 3}
     - {fileID: -395258689, guid: e11577cdb75e1d2488838fdb08b0fae4, type: 3}
-    - {fileID: -1371457028, guid: e11577cdb75e1d2488838fdb08b0fae4, type: 3}
+    - {fileID: -2068837116, guid: e11577cdb75e1d2488838fdb08b0fae4, type: 3}
     - {fileID: -337994620, guid: e11577cdb75e1d2488838fdb08b0fae4, type: 3}
     - {fileID: 328305835, guid: e11577cdb75e1d2488838fdb08b0fae4, type: 3}
     - {fileID: -1423137549, guid: e11577cdb75e1d2488838fdb08b0fae4, type: 3}
@@ -94,6 +94,27 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
+  - time: 0
+    functionName: SpawnSlashFX
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.033333335
+    functionName: EnableHitBox
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.11666667
+    functionName: DisableHitBox
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 0.13333334
     functionName: EndAttack
     data: 
