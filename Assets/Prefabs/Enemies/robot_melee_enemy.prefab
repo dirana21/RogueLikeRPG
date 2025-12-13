@@ -34,7 +34,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.835, y: -1.002, z: 0}
-  m_LocalScale: {x: 1.3, y: 1.3, z: 1}
+  m_LocalScale: {x: 1.3, y: 1.3, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -106,7 +106,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.6, y: 1.6}
+  m_Size: {x: 0.8, y: 0.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -211,13 +211,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9daf7fc1490a994a8bfb6cfb775f7ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
-  walkRadius: 1.5
-  idleTimeMin: 0.5
-  idleTimeMax: 1.5
-  attackRange: 1.2
-  attackCooldown: 1.2
-  attackOrigin: {fileID: 0}
 --- !u!114 &3386971543683139612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -230,7 +223,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24bdb5e1fd30f3443993af2b26f7bd99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRadius: 3
-  playerMask:
-    serializedVersion: 2
-    m_Bits: 0
