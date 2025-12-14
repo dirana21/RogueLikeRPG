@@ -3,36 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Enemies\\Movement\\EnemyMovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Enemies\\Movement\\EnemyMovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Enemies\\UI\\EnemyHealthBarUI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Enemies\\UI\\EnemyHealthBarUI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Enemies\\Attack\\EnemyAttackEvents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Enemies\\Attack\\EnemyAttackEvents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Enemies\\EnemyDamageReceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Enemies\\EnemyDamageReceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Enemies\\Attack\\FXAutoDestroy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Enemies\\Attack\\FXAutoDestroy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Shared\\Stats\\CharacterStats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Shared\\Stats\\CharacterStats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Enemies\\Attack\\SlashFXDamage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Enemies\\Attack\\SlashFXDamage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Shared\\Stats\\Vital.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Shared\\Stats\\Vital.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Enemies\\Attack\\EnemyAttack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Enemies\\Attack\\EnemyAttack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Shared\\Combat\\DamageCalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Shared\\Combat\\DamageCalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Enemies\\Attack\\EnemySlashFxSpawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Enemies\\Attack\\EnemySlashFxSpawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Enemies\\Attack\\AutoDestroyAfterTime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Enemies\\Attack\\AutoDestroyAfterTime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Shared\\Stats\\CharacterStatsMono.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Shared\\Stats\\CharacterStatsMono.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,110 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EnemyMovement.cs",
-              "DocumentMoniker": "C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Enemies\\Movement\\EnemyMovement.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\Movement\\EnemyMovement.cs",
-              "ToolTip": "C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Enemies\\Movement\\EnemyMovement.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemies\\Movement\\EnemyMovement.cs",
-              "ViewState": "AgIAAJ0AAAAAAAAAAAAAwMEAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Vital.cs",
+              "DocumentMoniker": "C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Shared\\Stats\\Vital.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Shared\\Stats\\Vital.cs",
+              "ToolTip": "C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Shared\\Stats\\Vital.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Shared\\Stats\\Vital.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAwC4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T12:57:56.622Z",
+              "WhenOpened": "2025-12-14T19:18:56.804Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "FXAutoDestroy.cs",
-              "DocumentMoniker": "C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Enemies\\Attack\\FXAutoDestroy.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\Attack\\FXAutoDestroy.cs",
-              "ToolTip": "C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Enemies\\Attack\\FXAutoDestroy.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemies\\Attack\\FXAutoDestroy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Title": "CharacterStats.cs",
+              "DocumentMoniker": "C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Shared\\Stats\\CharacterStats.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Shared\\Stats\\CharacterStats.cs",
+              "ToolTip": "C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Shared\\Stats\\CharacterStats.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Shared\\Stats\\CharacterStats.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAAwH4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T12:45:58.966Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SlashFXDamage.cs",
-              "DocumentMoniker": "C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Enemies\\Attack\\SlashFXDamage.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\Attack\\SlashFXDamage.cs",
-              "ToolTip": "C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Enemies\\Attack\\SlashFXDamage.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemies\\Attack\\SlashFXDamage.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAwDgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T12:20:09.016Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EnemyAttackEvents.cs",
-              "DocumentMoniker": "C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Enemies\\Attack\\EnemyAttackEvents.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\Attack\\EnemyAttackEvents.cs",
-              "ToolTip": "C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Enemies\\Attack\\EnemyAttackEvents.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemies\\Attack\\EnemyAttackEvents.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAAwGUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T12:11:13.631Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DamageCalculator.cs",
-              "DocumentMoniker": "C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Shared\\Combat\\DamageCalculator.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Shared\\Combat\\DamageCalculator.cs",
-              "ToolTip": "C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Shared\\Combat\\DamageCalculator.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Shared\\Combat\\DamageCalculator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T11:49:20.514Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "EnemySlashFxSpawner.cs",
-              "DocumentMoniker": "C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Enemies\\Attack\\EnemySlashFxSpawner.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\Attack\\EnemySlashFxSpawner.cs",
-              "ToolTip": "C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Enemies\\Attack\\EnemySlashFxSpawner.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemies\\Attack\\EnemySlashFxSpawner.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T11:44:58.802Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AutoDestroyAfterTime.cs",
-              "DocumentMoniker": "C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Enemies\\Attack\\AutoDestroyAfterTime.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\Attack\\AutoDestroyAfterTime.cs",
-              "ToolTip": "C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Enemies\\Attack\\AutoDestroyAfterTime.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemies\\Attack\\AutoDestroyAfterTime.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T11:43:03.814Z",
+              "WhenOpened": "2025-12-14T18:10:57.671Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "EnemyAttack.cs",
-              "DocumentMoniker": "C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Enemies\\Attack\\EnemyAttack.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\Attack\\EnemyAttack.cs",
-              "ToolTip": "C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Enemies\\Attack\\EnemyAttack.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemies\\Attack\\EnemyAttack.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
+              "Title": "CharacterStatsMono.cs",
+              "DocumentMoniker": "C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Shared\\Stats\\CharacterStatsMono.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Shared\\Stats\\CharacterStatsMono.cs",
+              "ToolTip": "C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Shared\\Stats\\CharacterStatsMono.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Shared\\Stats\\CharacterStatsMono.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T11:10:50.058Z",
+              "WhenOpened": "2025-12-14T18:09:51.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EnemyHealthBarUI.cs",
+              "DocumentMoniker": "C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Enemies\\UI\\EnemyHealthBarUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\UI\\EnemyHealthBarUI.cs",
+              "ToolTip": "C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Enemies\\UI\\EnemyHealthBarUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemies\\UI\\EnemyHealthBarUI.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T13:39:03.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EnemyDamageReceiver.cs",
+              "DocumentMoniker": "C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Enemies\\EnemyDamageReceiver.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\EnemyDamageReceiver.cs",
+              "ToolTip": "C:\\Users\\\u041C\u0430\u043A\u0441\\Desktop\\Game \u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\GitProject\\RogueLikeRPG\\Assets\\Scripts\\Enemies\\EnemyDamageReceiver.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemies\\EnemyDamageReceiver.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAADEAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T13:10:34.868Z",
               "EditorCaption": ""
             }
           ]

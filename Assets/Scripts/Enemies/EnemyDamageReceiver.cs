@@ -1,8 +1,8 @@
 using UnityEngine;
-  
+using Game.Shared.Stats;
 
 [RequireComponent(typeof(CharacterStatsMono))]
-public class EnemyDamageReceiver : MonoBehaviour, IDamageReceiver
+public sealed class EnemyDamageReceiver : MonoBehaviour, IDamageReceiver
 {
     private CharacterStatsMono statsMono;
     private Animator anim;
@@ -10,27 +10,43 @@ public class EnemyDamageReceiver : MonoBehaviour, IDamageReceiver
     private void Awake()
     {
         statsMono = GetComponent<CharacterStatsMono>();
-        anim      = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
+    }
 
-        if (statsMono != null)
-            statsMono.Model.Health.OnDepleted += OnDeath;
+    private void Start()
+    {
+        // тут Model уже гарантированно создан (после всех Awake)
+        if (statsMono?.Model?.Health == null)
+        {
+            Debug.LogError($"{name}: Model/Health not ready on Start");
+            enabled = false;
+            return;
+        }
+
+        statsMono.Model.Health.OnDepleted += OnDeath;
+    }
+
+    private void OnDestroy()
+    {
+        if (statsMono?.Model?.Health != null)
+            statsMono.Model.Health.OnDepleted -= OnDeath;
     }
 
     public void TakeHit(float damage)
     {
-        if (statsMono == null) return;
+        if (statsMono?.Model?.Health == null) return;
 
+        float before = statsMono.Model.Health.Current;
         statsMono.Model.Health.Add(-damage);
-        Debug.Log($"{name} получил {damage} урона. HP = {statsMono.Model.Health.Current}");
+        float after = statsMono.Model.Health.Current;
+
+        Debug.Log($"{name} TAKE HIT {damage:0.##}. HP: {before:0.##} -> {after:0.##}");
     }
+
 
     private void OnDeath()
     {
         Debug.Log($"{name} умер");
-
-        if (anim != null)
-            anim.SetBool("isDead", true); // или SetTrigger("Death") — как у вас принято
-
-        Destroy(gameObject, 1.5f);
+        Destroy(gameObject, 0.01f);
     }
 }
