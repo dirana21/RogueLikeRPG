@@ -11,8 +11,8 @@ public sealed class EnemyHealthBarUI : MonoBehaviour
 
     private void Reset()
     {
-        fill = GetComponentInChildren<Image>(true);
-        hpText = GetComponentInChildren<TMP_Text>(true);
+        fill = transform.Find("Fill")?.GetComponent<Image>();
+        hpText = transform.Find("HPText")?.GetComponent<TMP_Text>();
     }
 
     private void LateUpdate()
