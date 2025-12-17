@@ -4,9 +4,9 @@ public class PlayerMeleeAttack : MonoBehaviour
 {
     [Header("Attack settings")]
     [SerializeField] private float attackDamage = 20f;
-    [SerializeField] private float attackDistance = 0.8f;   // насколько далеко от игрока
-    [SerializeField] private float attackRadius   = 0.6f;   // радиус удара
-    [SerializeField] private LayerMask enemyMask;           // сюда поставим слой Enemy
+    [SerializeField] private float attackDistance = 0.8f;
+    [SerializeField] private float attackRadius   = 0.6f;
+    [SerializeField] private LayerMask enemyMask;
 
     private Animator anim;
 

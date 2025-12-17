@@ -6,6 +6,25 @@
   <component name="ChangeListManager">
     <list default="true" id="9ecba2a7-4027-47bc-a032-525b987657d4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RogueLikeRPG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RogueLikeRPG/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraFollow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraFollow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Abstractions/IFacing.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Abstractions/IFacing.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Abstractions/IMover.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Abstractions/IMover.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Combat/PlayerMeleeAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Combat/PlayerMeleeAttack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Visuals/SpriteFacing.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Visuals/SpriteFacing.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shared/Combat/DamageCalculator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shared/Combat/DamageCalculator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shared/Stats/CharacterStatsMono.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shared/Stats/CharacterStatsMono.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StatsDebugUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StatsDebugUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Talents/TalentController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Talents/TalentController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Talents/TalentNodeSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Talents/TalentNodeSO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Talents/TalentTreeSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Talents/TalentTreeSO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Talents/TalenteffectDef.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Talents/TalenteffectDef.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Talents/UI/TalentTooltipTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Talents/UI/TalentTooltipTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Talents/UI/TalentTooltipUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Talents/UI/TalentTooltipUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,18 +70,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "player/interface/hpbar",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="D:\UnityHub\2022.3.62f2\Editor\Unity.exe" />
@@ -125,6 +144,8 @@
       <workItem from="1764881250717" duration="214000" />
       <workItem from="1765307914068" duration="5269000" />
       <workItem from="1765623032506" duration="1023000" />
+      <workItem from="1765630054010" duration="528000" />
+      <workItem from="1765985501426" duration="3923000" />
     </task>
     <servers />
   </component>

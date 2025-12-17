@@ -4,7 +4,7 @@ using UnityEngine;
 public class SpriteFacing : MonoBehaviour, IFacing
 {
     private SpriteRenderer _sr;
-    public int FacingSign { get; private set; } = 1; // 1 вправо, -1 влево
+    public int FacingSign { get; private set; } = 1;
 
     void Awake() => _sr = GetComponent<SpriteRenderer>();
 

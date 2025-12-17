@@ -3,10 +3,10 @@ using UnityEngine;
 [DisallowMultipleComponent]
 public class PlayerController : MonoBehaviour
 {
-    [Header("Refs не трогать, оно ищет путь само")]
-    [SerializeField] private MonoBehaviour inputProvider;   // IPlayerInput
-    [SerializeField] private MonoBehaviour moverProvider;   // IMover
-    [SerializeField] private MonoBehaviour facingProvider;  // IFacing
+    [Header("Refs не трогати, воно шукає шлях само")]
+    [SerializeField] private MonoBehaviour inputProvider;
+    [SerializeField] private MonoBehaviour moverProvider;
+    [SerializeField] private MonoBehaviour facingProvider;
     [SerializeField] private AnimationDriver anim;
     [Header("Tuning")]
     [SerializeField] private float moveSpeed = 4f;
@@ -18,7 +18,6 @@ public class PlayerController : MonoBehaviour
 
     void Awake()
     {
-        // внедрение зависимостей (DIP)
         _input  = (inputProvider  as IPlayerInput)  ?? GetComponent<IPlayerInput>();
         _combat = (inputProvider  as ICombatInput)  ?? GetComponent<ICombatInput>();
         _mover  = (moverProvider  as IMover)        ?? GetComponent<IMover>();
@@ -28,17 +27,14 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        // 1) движение
+        
         Vector2 dir = new Vector2(_input.Horizontal, _input.Vertical);
         _mover.Move(dir, moveSpeed);
-
-        // 2) разворот
+        
         _facing.UpdateFacing(_input.Horizontal);
-
-        // 3) анимация бега
+        
         anim.SetMoveSpeed(_mover.CurrentSpeed);
-
-        // 4) атака (пример)
+        
         if (_combat != null && _combat.AttackPressed)
             anim.PlayAttack();
     }

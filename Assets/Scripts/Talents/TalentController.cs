@@ -33,7 +33,7 @@ public class TalentController : MonoBehaviour
         {
             if (!CanUnlock(node)) return false;
 
-            // применить эффекты
+            
             var created = new List<IStatModifier>();
             float now = Time.time;
             foreach (var e in node.effects)
@@ -49,7 +49,7 @@ public class TalentController : MonoBehaviour
             return true;
         }
 
-        // опционально — сброс/ресет
+        
         public void ResetAll()
         {
            foreach (var kv in _appliedMods)

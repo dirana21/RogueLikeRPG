@@ -29,7 +29,7 @@ public class TalentTooltipTrigger : MonoBehaviour, IPointerClickHandler
         }
         else
         {
-            tooltipUI.Show(_view.Data, Input.mousePosition);
+            tooltipUI.Show(_view.Data, eventData.position);
             shown = true;
         }
     }

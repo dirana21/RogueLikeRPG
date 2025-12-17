@@ -21,7 +21,6 @@ public sealed class CharacterStatsMono : MonoBehaviour, IStatsProvider, IResista
 
     private void OnDeath()
     {
-        // дерни анимацию смерти и т.п.
         // anim.SetBool("isDead", true);
     }
 }
