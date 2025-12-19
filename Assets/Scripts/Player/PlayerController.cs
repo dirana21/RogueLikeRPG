@@ -10,6 +10,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private AnimationDriver anim;
     [Header("Tuning")]
     [SerializeField] private float moveSpeed = 4f;
+    [SerializeField] private float staminaCostPerAttack = 15f;
+
+    [SerializeField] private CharacterStatsMono stats;
+    private bool _isAttacking;
 
     private IPlayerInput _input;
     private ICombatInput _combat;
@@ -23,6 +27,8 @@ public class PlayerController : MonoBehaviour
         _mover  = (moverProvider  as IMover)        ?? GetComponent<IMover>();
         _facing = (facingProvider as IFacing)       ?? GetComponent<IFacing>();
         if (anim == null) anim = GetComponent<AnimationDriver>();
+        if (stats == null)
+            stats = GetComponent<CharacterStatsMono>();
     }
 
     void Update()
@@ -36,6 +42,32 @@ public class PlayerController : MonoBehaviour
         anim.SetMoveSpeed(_mover.CurrentSpeed);
         
         if (_combat != null && _combat.AttackPressed)
-            anim.PlayAttack();
+            TryAttack();
+        
+    }
+    public void OnAttackAnimationEnd()
+    {
+        _isAttacking = false;
+    }
+    private void TryAttack()
+    {
+        if (_isAttacking)
+            return;
+
+        if (stats == null)
+            return;
+
+        if (stats.Model.Stamina.Current < staminaCostPerAttack)
+            return;
+
+        StartAttack();
+    }
+    private void StartAttack()
+    {
+        _isAttacking = true;
+
+        stats.Model.Stamina.Add(-staminaCostPerAttack);
+
+        anim.PlayAttack();
     }
 }

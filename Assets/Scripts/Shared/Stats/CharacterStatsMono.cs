@@ -4,6 +4,7 @@ using UnityEngine;
 public sealed class CharacterStatsMono : MonoBehaviour, IStatsProvider, IResistanceProvider
 {
     [SerializeField] private BaseStatsConfig baseConfig;
+    [SerializeField] private Animator anim;
 
     public CharacterStats Model { get; private set; }
 
@@ -21,6 +22,6 @@ public sealed class CharacterStatsMono : MonoBehaviour, IStatsProvider, IResista
 
     private void OnDeath()
     {
-        // anim.SetBool("isDead", true);
+         anim.SetBool("isDead", true);
     }
 }

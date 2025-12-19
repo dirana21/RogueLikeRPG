@@ -14,4 +14,5 @@ public class AnimationDriver : MonoBehaviour
     public void Die() => _anim.SetBool("IsDead", true);
 
     public void TakeDamage() => _anim.SetTrigger("TakeDamage");
+    
 }

@@ -21,6 +21,9 @@ namespace Game.Shared.Stats
         public float maxHealth = 100f;
         public float maxStamina = 50f;
         public float damageTakenMultiplier = 1.0f;
+        
+        [Header("Regen")]
+        public float staminaRegen = 10f;
 
         [Header("Resistances (0..1)")]
         [Range(0, 1)] public float resFire;
