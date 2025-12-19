@@ -9,10 +9,10 @@ public sealed class SlashFXDamage : MonoBehaviour
     [SerializeField] private DamageType damageType = DamageType.Physical;
 
     [Header("Lifetime")]
-    [SerializeField] private float lifeTime = 0.35f; // сколько живет слеш (сек)
+    [SerializeField] private float lifeTime = 0.35f; // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ (пїЅпїЅпїЅ)
 
-    private CharacterStatsMono owner;                 // кто атакует
-    private readonly HashSet<CharacterStatsMono> _hit = new(); // чтобы не бить много раз
+    private CharacterStatsMono owner;                 // пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    private readonly HashSet<CharacterStatsMono> _hit = new(); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
 
     private void Awake()
     {
@@ -25,7 +25,7 @@ public sealed class SlashFXDamage : MonoBehaviour
         Destroy(gameObject, lifeTime);
     }
 
-    // ЭТО ВЫЗЫВАЕТ ВРАГ СРАЗУ ПОСЛЕ Instantiate
+    // пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ Instantiate
     public void Init(CharacterStatsMono ownerStats, float damage, DamageType type)
     {
         owner = ownerStats;
@@ -35,22 +35,27 @@ public sealed class SlashFXDamage : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        var target = other.GetComponent<CharacterStatsMono>();
-        if (target == null) return;
-        if (owner != null && target == owner) return;
+        var receiver = other.GetComponentInParent<IDamageReceiver>();
+        if (receiver == null) return;
 
-        // чтобы не наносить урон одной цели много раз (коллайдер может сработать несколько раз)
-        if (_hit.Contains(target)) return;
-        _hit.Add(target);
+        var targetStats = other.GetComponentInParent<CharacterStatsMono>();
+        if (targetStats == null) return;
+
+        if (owner != null && targetStats == owner) return;
+        if (_hit.Contains(targetStats)) return;
+
+        _hit.Add(targetStats);
 
         float dmg = DamageCalculator.ComputeHit(
-            owner,   // attacker
-            target,  // target stats
-            target,  // target resists
+            owner,
+            targetStats,
+            targetStats,
             baseDamage,
             damageType
         );
 
-        target.Model.Health.Add(-dmg);
+        Debug.Log($"SlashFX hit target for {dmg}");
+
+        receiver.TakeHit(dmg);
     }
 }
