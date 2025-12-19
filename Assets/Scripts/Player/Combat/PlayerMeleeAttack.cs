@@ -3,57 +3,39 @@ using UnityEngine;
 public class PlayerMeleeAttack : MonoBehaviour
 {
     [Header("Attack settings")]
-    [SerializeField] private float attackDamage = 20f;
-    [SerializeField] private float attackDistance = 0.8f;
-    [SerializeField] private float attackRadius   = 0.6f;
-    [SerializeField] private LayerMask enemyMask;
+    [SerializeField] private float attackRadius = 0.8f;
+    [SerializeField] private float attackDamage = 10f;
+    [SerializeField] private LayerMask enemyLayer;
+    [SerializeField] private Transform attackPoint;
 
-    private Animator anim;
-
-    private void Awake()
+    public void Hit()
     {
-        anim = GetComponent<Animator>();
-    }
-
-    private void Update()
-    {
-        
-        if (Input.GetMouseButtonDown(0))
+        if (!attackPoint)
         {
-            if (anim != null)
-                anim.SetTrigger("Attack");   
-
-            DoHit();
+            Debug.LogWarning("AttackPoint not assigned!");
+            return;
         }
-    }
 
-    private void DoHit()
-    {
-        
-        Vector2 center = transform.position;
-        center += (Vector2)transform.right * attackDistance;  // направо от игрока
-
-        // ищем все коллайдеры врагов в зоне
-        Collider2D[] hits = Physics2D.OverlapCircleAll(center, attackRadius, enemyMask);
+        Collider2D[] hits = Physics2D.OverlapCircleAll(
+            attackPoint.position,
+            attackRadius,
+            enemyLayer
+        );
 
         foreach (var hit in hits)
         {
-            var receiver = hit.GetComponent<IDamageReceiver>();
-            if (receiver != null)
+            var damageReceiver = hit.GetComponent<IDamageReceiver>();
+            if (damageReceiver != null)
             {
-                receiver.TakeHit(attackDamage);
+                damageReceiver.TakeHit(attackDamage);
             }
         }
     }
 
-    // чтобы видеть зону удара в редакторе
     private void OnDrawGizmosSelected()
     {
+        if (!attackPoint) return;
         Gizmos.color = Color.red;
-
-        Vector2 center = transform.position;
-        center += (Vector2)transform.right * attackDistance;
-
-        Gizmos.DrawWireSphere(center, attackRadius);
+        Gizmos.DrawWireSphere(attackPoint.position, attackRadius);
     }
 }

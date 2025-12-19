@@ -15,7 +15,7 @@ public sealed class EnemyDamageReceiver : MonoBehaviour, IDamageReceiver
 
     private void Start()
     {
-        // тут Model уже гарантированно создан (после всех Awake)
+        
         if (statsMono?.Model?.Health == null)
         {
             Debug.LogError($"{name}: Model/Health not ready on Start");

@@ -3,7 +3,7 @@
 [RequireComponent(typeof(Collider2D))]
 public sealed class EnemyAttack : MonoBehaviour
 {
-    [SerializeField] private CharacterStatsMono owner; // враг (родитель)
+    [SerializeField] private CharacterStatsMono owner;
     [SerializeField] private float baseDamage = 10f;
     [SerializeField] private DamageType damageType = DamageType.Physical;
 
@@ -26,21 +26,24 @@ public sealed class EnemyAttack : MonoBehaviour
     {
         if (!hitbox.enabled) return;
 
-        var target = other.GetComponent<CharacterStatsMono>();
-        if (target == null || target == owner) return;
+        var receiver = other.GetComponentInParent<IDamageReceiver>();
+        if (receiver == null) return;
+
+        var targetStats = other.GetComponentInParent<CharacterStatsMono>();
+        if (targetStats == null) return;
 
         float damage = DamageCalculator.ComputeHit(
-            owner,   // attacker
-            target,  // target stats
-            target,  // target resists (у тебя CharacterStatsMono это умеет)
+            owner,
+            targetStats,
+            targetStats,
             baseDamage,
             damageType
         );
 
-        // урон = отрицательная дельта
-        target.Model.Health.Add(-damage);
+        Debug.Log($"Enemy hit target for {damage}");
 
-        // если хочешь "один удар за атаку", можно тут же выключить
-        // hitbox.enabled = false;
+        receiver.TakeHit(damage);
+
+        hitbox.enabled = false;
     }
 }
