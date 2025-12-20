@@ -147,5 +147,9 @@ public sealed class CharacterStats : IStatsProvider, IResistanceProvider
         if (Stamina.Current < Stamina.Max)
             Stamina.Add(regen * dt);
     }
-    
+    public bool ApplyDamage(float damage)
+    {
+        Health.Add(-damage);
+        return Health.Current <= 0f;
+    }
 }
