@@ -24,7 +24,7 @@ public class PlayerMeleeAttack : MonoBehaviour
 
         foreach (var hit in hits)
         {
-            var damageReceiver = hit.GetComponent<IDamageReceiver>();
+            var damageReceiver = hit.GetComponentInParent<IDamageReceiver>();
             if (damageReceiver != null)
             {
                 damageReceiver.TakeHit(attackDamage);
