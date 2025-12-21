@@ -21,7 +21,6 @@ public sealed class EnemyMovement : MonoBehaviour
     private float attackTimer = 0f;
     private bool isAttacking = false;
 
-    // направление на цель для слеша (Right/Left/Up/Down)
     private Vector2 lastAimDir = Vector2.right;
     public Vector2 LastAimDir => lastAimDir;
 
@@ -35,7 +34,7 @@ public sealed class EnemyMovement : MonoBehaviour
     private Vector2 randomTarget;
     private float idleTimer = 0f;
 
-    private float baseScaleXAbs; // запоминаем твой масштаб (1.3), но только положительный
+    private float baseScaleXAbs; 
 
     private void Awake()
     {
@@ -62,9 +61,6 @@ public sealed class EnemyMovement : MonoBehaviour
         bool isMoving = rb.velocity.sqrMagnitude > 0.01f;
         animator.SetBool("isMoving", isMoving);
 
-        // Фейсинг обновляем:
-        // - при движении по velocity
-        // - если стоим и есть цель, то по lastAimDir (чтобы слеш не появлялся "не там")
         if (isMoving)
             UpdateFacing(rb.velocity);
         else if (enemy != null && enemy.Target != null)
@@ -75,14 +71,12 @@ public sealed class EnemyMovement : MonoBehaviour
     {
         attackTimer -= Time.fixedDeltaTime;
 
-        // позиция, откуда меряем радиус атаки (исправляет "сверху не достает")
         Vector2 originPos = attackOrigin ? (Vector2)attackOrigin.position : rb.position;
 
         if (enemy != null && enemy.Target != null)
         {
             Vector2 toTarget = (Vector2)enemy.Target.position - originPos;
 
-            // сохраняем направление атаки (для SpawnSlashFX)
             if (toTarget.sqrMagnitude > 0.0001f)
                 lastAimDir = toTarget.normalized;
 
@@ -125,13 +119,10 @@ public sealed class EnemyMovement : MonoBehaviour
         rb.velocity = Vector2.zero;
     }
 
-    // Animation Event в конце атаки
     public void EndAttack()
     {
         isAttacking = false;
     }
-
-    // ------------------- RANDOM WALK LOGIC -------------------
 
     private void PickRandomTarget()
     {
@@ -164,21 +155,14 @@ public sealed class EnemyMovement : MonoBehaviour
         return dir * moveSpeed;
     }
 
-    /// <summary>
-    /// Корень держим с положительным scaleX, а разворот делаем через SpriteRenderer.flipX.
-    /// Это не ломает дочерние SpawnPoint'ы и FX.
-    /// </summary>
     private void UpdateFacing(Vector2 dirOrVelocity)
     {
         if (dirOrVelocity.sqrMagnitude < 0.0001f)
             return;
-
-        // scale всегда положительный (чтобы дети не зеркалились)
         var s = transform.localScale;
         s.x = baseScaleXAbs;
         transform.localScale = s;
 
-        // flip только визуальный
         if (sr != null)
             sr.flipX = dirOrVelocity.x < -0.01f;
     }
