@@ -18,22 +18,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23472df3-01b1-4aaa-8cc6-28fd9deb4657" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0001.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0001.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0002.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0002.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0003.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0003.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0004.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0004.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0005.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0005.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0006.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0006.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0007.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0007.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0008.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0008.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0009.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Idle/Idle-0009.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Run/Move-0001.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Run/Move-0001.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Run/Move-0002.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Run/Move-0002.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Run/Move-0003.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Run/Move-0003.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Run/Move-0004.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Run/Move-0004.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Run/Move-0005.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Run/Move-0005.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/MainCharacter/Run/Move-0006.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainCharacter/Run/Move-0006.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RogueLikeRPG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RogueLikeRPG/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraFollow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraFollow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Abstractions/IFacing.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Abstractions/IFacing.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Abstractions/IMover.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Abstractions/IMover.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Combat/PlayerMeleeAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Combat/PlayerMeleeAttack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Visuals/SpriteFacing.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Visuals/SpriteFacing.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shared/Combat/DamageCalculator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shared/Combat/DamageCalculator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shared/Stats/CharacterStatsMono.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shared/Stats/CharacterStatsMono.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StatsDebugUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StatsDebugUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Talents/TalentController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Talents/TalentController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Talents/TalentNodeSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Talents/TalentNodeSO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Talents/TalentTreeSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Talents/TalentTreeSO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Talents/TalenteffectDef.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Talents/TalenteffectDef.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +81,7 @@
       <workItem from="1763823717148" duration="358000" />
       <workItem from="1763824101667" duration="355000" />
       <workItem from="1763824911570" duration="5000" />
+      <workItem from="1765649698808" duration="23000" />
     </task>
     <servers />
   </component>

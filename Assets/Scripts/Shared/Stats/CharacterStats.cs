@@ -16,6 +16,7 @@ public sealed class CharacterStats : IStatsProvider, IResistanceProvider
     public const string Evasion = "evasion"; 
     public const string DamageTakenMult = "damage_taken_mult";
     public const string HealthMax = "health_max";
+    public const string staminaRegenRate = "stamina_regen_rate";
     
     public Vital Health { get; }
     public Vital Stamina { get; }
@@ -50,6 +51,7 @@ public sealed class CharacterStats : IStatsProvider, IResistanceProvider
         AddStat(Evasion,        cfg.evasion);
         AddStat(DamageTakenMult, cfg.damageTakenMultiplier);
         AddStat(HealthMax, cfg.maxHealth);
+        AddStat(staminaRegenRate, cfg.staminaRegen);
 
         
         Health  = new Vital("health",  cfg.maxHealth);
@@ -71,8 +73,8 @@ public sealed class CharacterStats : IStatsProvider, IResistanceProvider
     public void Tick(float dt)
     {
         _time += dt;
-        // скинуть протухшие моды
         _mods.RemoveAll(m => m.IsExpired(_time));
+        RegenerateStamina(dt);
         Recompute();
     }
 
@@ -135,5 +137,19 @@ public sealed class CharacterStats : IStatsProvider, IResistanceProvider
             if (_mods.Remove(m)) removed++;
         if (removed > 0) Recompute();
         return removed;
+    }
+    private void RegenerateStamina(float dt)
+    {
+        float regen = Get(staminaRegenRate);
+        if (regen <= 0f)
+            return;
+
+        if (Stamina.Current < Stamina.Max)
+            Stamina.Add(regen * dt);
+    }
+    public bool ApplyDamage(float damage)
+    {
+        Health.Add(-damage);
+        return Health.Current <= 0f;
     }
 }
